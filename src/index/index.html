@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Concept Explainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Concept Explainer</h1>
+    <p>Type a topic and get explanations at 3 levels.</p>
+
+    <input 
+      type="text" 
+      id="topicInput" 
+      placeholder="e.g. electron transitions, isotopes"
+    />
+
+    <button onclick="explainConcept()">Explain</button>
+
+    <div id="results">
+      <h3>🟢 Simple</h3>
+      <p id="simple"></p>
+
+      <h3>🟡 Normal</h3>
+      <p id="normal"></p>
+
+      <h3>🔴 Advanced</h3>
+      <p id="advanced"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
